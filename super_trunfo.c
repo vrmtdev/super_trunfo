@@ -45,7 +45,7 @@ void lerCarta(Carta *carta)
 // ~~~~Exibição dos dados da carta
 void exibirCarta(Carta carta)
 {
-    printf("Estado: %c ", carta.estado);
+    printf("Letra do estado: %c ", carta.estado);
     printf("Código: %s ", carta.codigo);
     printf("Cidade: %s ", carta.nomeCidade);
     printf("População: %d habitantes ", carta.populacao);
