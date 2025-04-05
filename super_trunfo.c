@@ -22,7 +22,9 @@ void lerCarta(Carta *carta)
     scanf(" %4s", carta->codigo);
 
     printf("Digite o nome da cidade:\n");
-    scanf(" %s", carta->nomeCidade);
+    getchar();
+    fgets(carta->nomeCidade, sizeof(carta->nomeCidade), stdin);
+    carta->nomeCidade[strcspn(carta->nomeCidade, "\n")] = 0;
 
     printf("Digite a população:\n");
     scanf("%d", &carta->populacao);
